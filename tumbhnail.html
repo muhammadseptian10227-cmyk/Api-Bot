@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustinOfficial - Thumbnail Preview</title>
+    
+    <!-- Open Graph Meta Tags untuk Thumbnail -->
+    <meta property="og:title" content="JustinOfficial - Kanal Resmi">
+    <meta property="og:description" content="Selamat datang di kanal resmi JustinOfficial. Temukan konten menarik dan terbaru di sini!">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/4A90E2/FFFFFF?text=JustinOfficial">
+    <meta property="og:url" content="https://example.com/justinofficial">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JustinOfficial - Kanal Resmi">
+    <meta name="twitter:description" content="Selamat datang di kanal resmi JustinOfficial. Temukan konten menarik dan terbaru di sini!">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/4A90E2/FFFFFF?text=JustinOfficial">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #fdbb2d;
+            text-shadow: 0 0 10px rgba(253, 187, 45, 0.5);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .thumbnail-preview {
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .thumbnail-preview img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 20px 0;
+            color: #e0e0e0;
+        }
+        
+        .meta-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        .meta-info h2 {
+            color: #fdbb2d;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .meta-info ul {
+            list-style-type: none;
+        }
+        
+        .meta-info li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .meta-info li:before {
+            content: "•";
+            color: #fdbb2d;
+            position: absolute;
+            left: 0;
+        }
+        
+        .share-button {
+            background: #4A90E2;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(74, 144, 226, 0.4);
+        }
+        
+        .share-button:hover {
+            background: #3a7bc8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(74, 144, 226, 0.6);
+        }
+        
+        .instructions {
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #b0b0b0;
+            text-align: center;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .description {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">JustinOfficial</div>
+        <h1>Thumbnail Preview untuk Media Sosial</h1>
+        
+        <div class="thumbnail-preview">
+            <img src="https://via.placeholder.com/1200x630/4A90E2/FFFFFF?text=JustinOfficial" alt="JustinOfficial Thumbnail">
+        </div>
+        
+        <p class="description">
+            Halaman ini menggunakan Open Graph meta tags untuk menampilkan thumbnail dan deskripsi 
+            yang menarik saat tautan dibagikan di media sosial seperti Facebook, Twitter, dan LinkedIn.
+        </p>
+        
+        <button class="share-button" onclick="sharePage()">Bagikan Halaman Ini</button>
+        
+        <div class="meta-info">
+            <h2>Meta Tags yang Digunakan:</h2>
+            <ul>
+                <li><strong>og:title</strong> - Judul yang akan ditampilkan</li>
+                <li><strong>og:description</strong> - Deskripsi singkat tentang konten</li>
+                <li><strong>og:image</strong> - URL gambar thumbnail</li>
+                <li><strong>og:url</strong> - URL kanonikal halaman</li>
+                <li><strong>og:type</strong> - Tipe konten (website, article, dll)</li>
+                <li><strong>twitter:card</strong> - Tipe card untuk Twitter</li>
+            </ul>
+        </div>
+        
+        <div class="instructions">
+            <p>Cobalah bagikan URL halaman ini di media sosial untuk melihat thumbnail yang ditampilkan!</p>
+        </div>
+    </div>
+
+    <script>
+        function sharePage() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'JustinOfficial - Kanal Resmi',
+                    text: 'Selamat datang di kanal resmi JustinOfficial. Temukan konten menarik dan terbaru di sini!',
+                    url: window.location.href,
+                })
+                .then(() => console.log('Berhasil dibagikan'))
+                .catch((error) => console.log('Error sharing', error));
+            } else {
+                // Fallback untuk browser yang tidak mendukung Web Share API
+                alert('Salin URL halaman ini dan bagikan di media sosial untuk melihat preview thumbnail!');
+            }
+        }
+    </script>
+</body>
+</html>
